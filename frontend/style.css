@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr; 
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    background: #167270;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.profileText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .profileImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.profileText .profileImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.profileText h2 span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.about, .info, .languages, .education, .right-side {
+    margin-top: 20px;
+}
+
+.info ul, .languages ul, .education ul, .right-side {
+    list-style: none;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.info ul li .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.info ul li span.text, 
+.info ul li a {
+    color: #c7e0e8;
+    font-weight: 200;
+    text-decoration: none; 
+}
+
+.info ul li a:hover {
+    text-decoration: underline; 
+}
+
+.languages {
+    margin-top: 20pt;
+    color: rgb(233, 238, 240);
+    font-weight: 700;
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+.languages li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 9pt; 
+}
+
+.languages .percent {
+    position: relative;
+    width: 60%;
+    height: 6px;
+    background: rgb(16, 24, 42);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(86, 165, 197);
+    border-radius: 5px;
+}
+
+.languages .percent div:hover {
+    background: rgb(151, 164, 170);
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+.right .title {
+    color: #000000; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.right-side li h4 {
+    color: #000000; 
+    font-weight: bold; 
+    font-size: 16px; 
+    margin-bottom: 5px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.left p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.education ul li {
+    margin-bottom: 20px;
+}
+
+.education h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.education p {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1;
+}
+
+.right-side li {
+    margin-bottom: 20px;
+}
+
+.right-side p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.right-side ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.right-side ul li {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
